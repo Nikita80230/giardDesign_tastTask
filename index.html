@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giard Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/libs/bootstrap/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="./styles/libs/bootstrap/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./styles/libs/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container header">
+            <a href="/"><img src="./images/logo.png" alt="Giard Design" /></a>
+            <nav>
+                <a class="text-14" href="#">Oferta
+                    <img src="./images/icon-arrow.png" alt="" />
+                </a>
+                <a href="#">O firmie</a>
+                <a href="#">Realizacje</a>
+                <a href="#">Kontakt</a>
+                <div>
+                    <button class="header-search-btn">
+                        <img src="./images/icon-search.png" alt="search" />
+                    </button>
+                    <input type="text" hidden />
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            <!-- <div class="container"> -->
+            <div class="intro-block-l">
+                <h1 class="intro-title title-60">
+                    Nowoczesna aranżacja Twojego ogrodu
+                </h1>
+                <p class="intro-description text-16">
+                    Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+                    realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
+                    podejściem do każdego projektu.
+                </p>
+                <div class="intro-btn-container">
+                    <button type="button" class="intro-btn green">
+                        Skontaktuj się z nami
+                    </button>
+                    <button type="button" class="intro-btn">
+                        Zobacz nasze realizacje
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                            <path
+                                d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z"
+                                fill="#1B5B31" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- </div> -->
+            <div class="intro-slider-container">
+                <div class="intro-slider">
+                    <img src="./images/intro-photo.png" alt="intro photo" />
+                </div>
+                <div class="slider-controls">
+                    <button type="button" class="control-btn prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="24" viewBox="0 0 27 24" fill="none">
+                            <path
+                                d="M0.795115 10.9393C0.209328 11.5251 0.209328 12.4749 0.795114 13.0607L10.3411 22.6066C10.9268 23.1924 11.8766 23.1924 12.4624 22.6066C13.0482 22.0208 13.0482 21.0711 12.4624 20.4853L3.97709 12L12.4624 3.51472C13.0482 2.92893 13.0482 1.97918 12.4624 1.3934C11.8766 0.80761 10.9268 0.80761 10.3411 1.3934L0.795115 10.9393ZM26.1442 10.5L1.85577 10.5L1.85577 13.5L26.1442 13.5L26.1442 10.5Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+                    <button type="button" class="control-btn next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="24" viewBox="0 0 27 24" fill="none">
+                            <path
+                                d="M26.2049 13.0607C26.7907 12.4749 26.7907 11.5251 26.2049 10.9393L16.6589 1.3934C16.0732 0.807611 15.1234 0.807611 14.5376 1.3934C13.9518 1.97919 13.9518 2.92893 14.5376 3.51472L23.0229 12L14.5376 20.4853C13.9518 21.0711 13.9518 22.0208 14.5376 22.6066C15.1234 23.1924 16.0732 23.1924 16.6589 22.6066L26.2049 13.0607ZM0.855774 13.5H25.1442V10.5H0.855774V13.5Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="section-py-120 grey">
+            <div class="container">
+                <div class="oferta">
+                    <div class="oferta-top">
+                        <p class="text-12">Oferta</p>
+                        <h2 class="oferta-title title-48">
+                            Działamy <span class="italic-bold">kompleksowo</span>
+                        </h2>
+                        <p class="text-16">
+                            Oferujemy kompletną obsługę inwestycji terenów zielonych.
+                            Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne.
+                            Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w
+                            życie, a na każdym etapie posłużymy radą i wieloletnim
+                            doświadczeniem.
+                        </p>
+                    </div>
+                    <div class="oferta-cards">
+                        <div class="oferta-card">
+                            <div class="oferta-card-top">
+                                <img class="oferta-card-top-icon" src="./images/icon-pencil.png" alt="alt text" />
+                                <h3 class="title-28">Projekty</h3>
+                                <p class="oferta-card-top">
+                                    Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
+                                    wykorzystaniem istniejącej przestrzeni.
+                                </p>
+                            </div>
+                            <div class="oferta-card-bottom">
+                                <button class="oferta-card-bottom-btn">
+                                    Dowiedz się więcej
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                        fill="none">
+                                        <path
+                                            d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z"
+                                            fill="#1B5B31" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="oferta-card">
+                            <div class="oferta-card-top">
+                                <img class="oferta-card-top-icon" src="./images/Icon-eye.png" alt="alt text" />
+                                <h3 class="title-28">Wizualizacje</h3>
+                                <p class="oferta-card-top">
+                                    Przedstawimy Ci projekty koncepcyjne  w postaci wirtualnego
+                                    spaceru animowanego w technologii 3D.
+                                </p>
+                            </div>
+                            <div class="oferta-card-bottom">
+                                <button class="oferta-card-bottom-btn">
+                                    Dowiedz się więcej
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                        fill="none">
+                                        <path
+                                            d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z"
+                                            fill="#1B5B31" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="oferta-card">
+                            <div class="oferta-card-top">
+                                <img class="oferta-card-top-icon" src="./images/Icon-stars.png" alt="alt text" />
+                                <h3 class="title-28">Realizacje</h3>
+                                <p class="oferta-card-top">
+                                    Zrealizujemy Twoje marzenie przy użyciu najnowszych
+                                    rozwiązań i zaawansowanych technologii.
+                                </p>
+                            </div>
+                            <div class="oferta-card-bottom">
+                                <button class="oferta-card-bottom-btn">
+                                    Dowiedz się więcej
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                        fill="none">
+                                        <path
+                                            d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z"
+                                            fill="#1B5B31" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="">
+
+            <div class="about-page">
+                <img class="image" src="./images/Photo-Ofirmie.png" alt=" alt text" />
+                <div class="">
+                    <div class="about_column">
+                        <p class="text-12 white">O firmie</p>
+                        <h2 class="about-title title-48">
+                            Działamy <span class="italic-bold">kompleksowo</span>
+                        </h2>
+                        <h5 class="about-text">
+                            Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
+                            wykwalifikowani projektanci oraz architekci, których zadaniem
+                            jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza
+                            specjalizacja to przestrzenie nowoczesne, które charakteryzuje
+                            minimalizm, geometria i elegancka prostota. Tworzymy ogrody
+                            małoobsługowe, dostosowane do współczesnego trybu życia.
+                        </h5>
+                        <button type="button" class="about-btn">
+                            Zobacz nasze realizacje
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
+                                fill="none">
+                                <path
+                                    d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z"
+                                    fill="#1B5B31" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="section-py-120 projects">
+            <div class="container">
+                <p class="text-12">Realizacje</p>
+                <h2 class="oferta-title title-48">
+                    Nasze <span class="italic-bold">projekty</span>
+                </h2>
+                <div class="grid">
+                    <div class="grid-sizer"><img src="./images/forGallery.png" alt=""></div>
+                    <div class="grid-item"><img src="./images/forGallery.png" alt=""></div>
+                    <div class="grid-item"><img src="./images/forGallery.png" alt=""></div>
+                    <div class="grid-item"><img src="./images/forGallery.png" alt=""></div>
+                    <div class="grid-item"><img src="./images/forGallery.png" alt=""></div>
+                    <div class="grid-item"><img src="./images/forGallery.png" alt=""></div>
+                    <div class="grid-item"><img src="./images/forGallery.png" alt=""></div>
+                    <div class="grid-item"><img src="./images/forGallery.png" alt=""></div>
+                    <div class="grid-item"><img src="./images/forGallery.png" alt=""></div>
+                    <div class="grid-item"><img src="./images/forGallery.png" alt=""></div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer></footer>
+    <script src="/path/to/masonry.pkgd.min.js"></script>
+    <script>
+        let grid = document.querySelector('.grid');
+        let msnry = new Masonry(grid, {
+            // options...
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            percentPosition: true
+        });
+
+        // init with selector
+        // var msnry = new Masonry('.grid', {
+        //     // options...
+        // });
+    </script>
+</body>
+
+</html>
