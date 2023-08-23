@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./styles/libs/bootstrap/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="./styles/libs/reset.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js" defer></script>
     <script src="./js/index.js" defer></script>
 </head>
 
@@ -171,7 +171,6 @@
             </div>
         </section>
         <section class="">
-
             <div class="about-page">
                 <img class="image" src="./images/Photo-Ofirmie.png" alt=" alt text" />
                 <div class="">
@@ -200,7 +199,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
         <section class="section-py-120 projects">
             <div class="container">
@@ -209,37 +207,112 @@
                     Nasze <span class="italic-bold">projekty</span>
                 </h2>
                 <div class="grid">
-                    <div class="grid-sizer"><img src="./images/forGallery.png" alt=""></div>
-                    <div class="grid-item"><img src="./images/forGallery.png" alt=""></div>
-                    <div class="grid-item"><img src="./images/forGallery.png" alt=""></div>
-                    <div class="grid-item"><img src="./images/forGallery.png" alt=""></div>
-                    <div class="grid-item"><img src="./images/forGallery.png" alt=""></div>
-                    <div class="grid-item"><img src="./images/forGallery.png" alt=""></div>
-                    <div class="grid-item"><img src="./images/forGallery.png" alt=""></div>
-                    <div class="grid-item"><img src="./images/forGallery.png" alt=""></div>
-                    <div class="grid-item"><img src="./images/forGallery.png" alt=""></div>
-                    <div class="grid-item"><img src="./images/forGallery.png" alt=""></div>
-
+                    <div class="grid-sizer"></div>
+                    <div class="grid-item">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+                    </div>
                 </div>
             </div>
         </section>
-
+        <section class="section-py-120 instagram">
+            <div class="container">
+                <div class="instagram-block">
+                    <h2 class="instagram-title title-40">
+                        Zostańmy w kontakcie! Znajdziesz nas na <span class="italic-bold">Instagramie.</span>
+                    </h2>
+                    <div class="instagram-btn-wrapper">
+                        <p class="instagram-text">Śledź nasze najnowsze realizacje!</p>
+                        <button class="instagram-btn">Instagram</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer></footer>
-    <script src="/path/to/masonry.pkgd.min.js"></script>
-    <script>
-        let grid = document.querySelector('.grid');
-        let msnry = new Masonry(grid, {
-            // options...
-            itemSelector: '.grid-item',
-            columnWidth: '.grid-sizer',
-            percentPosition: true
-        });
+    <footer>
+        <div class="footer-top">
+            <a class="footer-top-logo" href="/"><img src="./images/giarddesign-wv.png" alt="Giard Design" /></a>
+            <div class="footer-top-wrapper">
+                <p class="footer-top-text text-16">Daj znać, co możemy dla Ciebie zrobić!</p>
+                <button class="footer-top-btn intro-btn green" type="button">Skontaktuj się z nami</button>
+            </div>
+        </div>
 
-        // init with selector
-        // var msnry = new Masonry('.grid', {
-        //     // options...
-        // });
+        <div class="footer-middle">
+            <div class="socials">
+                <a href="#">Kontakt</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <div class="contacts">
+                <a href="tel:+380506880971">+380506880971</a>
+                <a href="mailto:beliynikita1995@gmail.com">beliynikita1995@gmail.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-bottom-text">Prawa zastrzeżone © 2022</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        window.onload = () => {
+            let grid = document.querySelector(".grid");
+            let msnry = new Masonry(grid, {
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                columnWidth: '.grid-sizer'
+            });
+            console.log("msnry: ", msnry);
+        };
+
+      // msnry.on("layoun")
+      // init with selector
+      // var msnry = new Masonry('.grid', {
+      //     // options...
+      // });
     </script>
 </body>
 
