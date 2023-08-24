@@ -22,6 +22,9 @@ body {
   flex-direction: column;
   align-items: center;
 }
+section {
+  width: 100vw;
+}
 a,
 a:hover {
   color: inherit;
@@ -34,19 +37,22 @@ a:hover {
   padding: 60px 0 60px;
 }
 .container {
-  max-width: 1292px;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 0 15px;
 }
 .title-60 {
   font-size: 60px;
   font-family: var(--font-montserrat);
   line-height: 1.16;
+  margin-top: 16px;
   margin-bottom: 36px;
 }
 .title-48 {
   font-size: 48px;
   font-family: var(--font-montserrat);
   line-height: 1.15;
+  margin-top: 16px;
   margin-bottom: 36px;
 }
 .title-40 {
@@ -117,13 +123,15 @@ nav {
 }
 
 .intro {
+  background: var(--beige-color);
+  width: 100vw;
+}
+.intro .container {
   padding: 145px 0 145px;
   display: flex;
-  width: 1440px;
   justify-content: flex-end;
   align-items: center;
   gap: 64px;
-  background: var(--beige-color);
 }
 .intro-block-l {
   display: flex;
@@ -226,7 +234,6 @@ nav {
   width: 1040px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
 }
 
 .oferta-card-bottom-btn {
@@ -251,9 +258,13 @@ nav {
   padding-left: 0px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 72px;
   flex-shrink: 0;
 }
+
+.about-text {
+  margin-bottom: 72px;
+}
+
 .about-title {
   color: var(--white-100);
 }
@@ -352,16 +363,18 @@ nav {
 }
 
 /* ------------footer----------- */
-
 footer {
+  width: 100vw;
+  color: var(--white-100);
+  background-color: var(--secondary-color);
+}
+
+footer .container {
   display: flex;
-  width: 1440px;
   padding: 80px 200px;
   flex-direction: column;
   align-items: center;
   gap: 120px;
-  color: var(--white-100);
-  background-color: var(--secondary-color);
 }
 
 .footer-top {
@@ -413,7 +426,17 @@ footer {
   align-items: flex-start;
   gap: 48px;
 }
+.footer-bottom {
+  display: flex;
+  width: 1040px;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .footer-bottom-text {
   text-align: center;
+}
+
+.made-by {
+  display: inline-block;
 }
