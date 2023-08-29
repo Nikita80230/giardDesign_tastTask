@@ -7,7 +7,7 @@
     <title>Giard Design</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@500&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@400;500&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="./styles/libs/bootstrap/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="./styles/libs/bootstrap/bootstrap-grid.min.css" />
@@ -19,7 +19,7 @@
 
 <body>
     <header>
-        <div class="container header">
+        <div class="container header-container">
             <a href="/"><img src="./images/logo.png" alt="Giard Design" /></a>
             <nav>
                 <a class="text-14" href="#">Oferta
@@ -35,18 +35,35 @@
                     <input type="text" hidden />
                 </div>
             </nav>
+            <button class="open-menu-btn" type="button">
+                <img class="open-menu-img" src="/images/menu-burger.png" alt="">
+            </button>
         </div>
+        <div class="mob-menu" hidden>
+            <div class="mob-menu-container">
+                <a class="mob-menu-logo" href="/"><img src="./images/logo.png" alt="Giard Design" /></a>
+                <nav class="mob-menu-nav">
+                    <a class="mob-menu-link" class="text-14" href="#">Oferta
+                        <img src="./images/icon-arrow.png" alt="" />
+                    </a>
+                    <a class="mob-menu-link" href="#">O firmie</a>
+                    <a class="mob-menu-link" href="#">Realizacje</a>
+                    <a class="mob-menu-link" href="#">Kontakt</a>
+                </nav>
+            </div>
+        </div>
+
     </header>
     <main>
         <section class="intro">
-            <div class="container">
+            <div class="container intro-container">
                 <div class="intro-block-l">
                     <h1 class="intro-title title-60">
                         Nowoczesna aranżacja Twojego ogrodu
                     </h1>
                     <p class="intro-description text-16">
                         Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
-                        realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
+                        realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
                         podejściem do każdego projektu.
                     </p>
                     <div class="intro-btn-container">
@@ -67,7 +84,7 @@
 
                 <div class="intro-slider-container">
                     <div class="intro-slider">
-                        <img src="./images/intro-photo.png" alt="intro photo" />
+                        <img class="intro-slider-img" src="./images/intro-photo.png" alt="intro photo" />
                     </div>
                     <div class="slider-controls">
                         <button type="button" class="control-btn prev">
@@ -94,7 +111,7 @@
             <div class="container">
                 <div class="oferta">
                     <div class="oferta-top">
-                        <p class="text-12">Oferta</p>
+                        <p class="text-12 oferta-uptitle">Oferta</p>
                         <h2 class="oferta-title title-48">
                             Działamy <span class="italic-bold">kompleksowo</span>
                         </h2>
@@ -133,7 +150,7 @@
                                 <img class="oferta-card-top-icon" src="./images/Icon-eye.png" alt="alt text" />
                                 <h3 class="title-28">Wizualizacje</h3>
                                 <p class="oferta-card-top">
-                                    Przedstawimy Ci projekty koncepcyjne  w postaci wirtualnego
+                                    Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego
                                     spaceru animowanego w technologii 3D.
                                 </p>
                             </div>
@@ -174,7 +191,7 @@
                 </div>
             </div>
         </section>
-        <section class="green">
+        <!-- <section class="green">
             <div class="container">
                 <div class="about-page">
                     <img class="image" src="./images/Photo-Ofirmie.png" alt=" alt text" />
@@ -182,7 +199,7 @@
                         <div class="about_column">
                             <p class="text-12 white">O firmie</p>
                             <h2 class="about-title title-48">
-                                Działamy <span class="italic-bold">kompleksowo</span>
+                                Tworzymy z <span class="italic-bold">pasją</span>
                             </h2>
                             <h5 class="about-text">
                                 Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
@@ -205,66 +222,81 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="section-py-120 projects">
+        </section> -->
+        <!-- <section class="section-py-120 projects">
             <div class="container">
                 <p class="text-12">Realizacje</p>
-                <h2 class="oferta-title title-48">
+                <h2 class="projects-title title-48">
                     Nasze <span class="italic-bold">projekty</span>
                 </h2>
-                <div class="grid">
-                    <div class="grid-sizer"></div>
-                    <div class="grid-item">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
-                    </div>
-                    <div class="grid-item">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
-                    </div>
-                    <div class="grid-item">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
-                    </div>
-                    <div class="grid-item">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
-                    </div>
-                    <div class="grid-item">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
-                    </div>
-                    <div class="grid-item">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
-                    </div>
-                    <div class="grid-item">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
-                    </div>
-                    <div class="grid-item">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
-                    </div>
-                    <div class="grid-item">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
-                    </div>
-                </div>
             </div>
-        </section>
-        <section class="section-py-120 instagram">
+            <div class="grid">
+                <div class="grid-sizer"></div>
+                <div class="grid-item">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
+                </div>
+                <div class="grid-item">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
+                </div>
+                <div class="grid-item">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
+                </div>
+                <div class="grid-item">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+                </div>
+                <div class="grid-item">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
+                </div>
+                <div class="grid-item">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+                </div>
+                <div class="grid-item">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+                </div>
+                <div class="grid-item">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+                </div>
+                <div class="grid-item">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+                </div>
+                <button class="grid-btn" type="button">
+                    Rozwiń
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                        <path
+                            d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z"
+                            fill="#111111" />
+                    </svg>
+                </button>
+            </div>
+        </section> -->
+        <!-- <section class="section-py-120 instagram">
             <div class="container">
                 <div class="instagram-block">
                     <h2 class="instagram-title title-40">
-                        Zostańmy w kontakcie! Znajdziesz nas na <span class="italic-bold">Instagramie.</span>
+                        Zostańmy w kontakcie! Znajdziesz nas na
+                        <span class="italic-bold">Instagramie.</span>
                     </h2>
                     <div class="instagram-btn-wrapper">
-                        <p class="instagram-text">Śledź nasze najnowsze realizacje!</p>
+                        <p class="instagram-text text-16">
+                            Śledź nasze najnowsze realizacje!
+                        </p>
                         <button class="instagram-btn">Instagram</button>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
-    <footer>
+    <!-- <footer>
         <div class="container">
             <div class="footer-top">
                 <a class="footer-top-logo" href="/"><img src="./images/giarddesign-wv.png" alt="Giard Design" /></a>
                 <div class="footer-top-wrapper">
-                    <p class="footer-top-text text-16">Daj znać, co możemy dla Ciebie zrobić!</p>
-                    <button class="footer-top-btn intro-btn green" type="button">Skontaktuj się z nami</button>
+                    <p class="footer-top-text text-16">
+                        Daj znać, co możemy dla Ciebie zrobić!
+                    </p>
+                    <button class="footer-top-btn intro-btn green" type="button">
+                        Skontaktuj się z nami
+                    </button>
                 </div>
             </div>
 
@@ -337,34 +369,16 @@
                 </div>
             </div>
         </div>
-    </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </footer> -->
 
     <script>
         window.onload = () => {
             let grid = document.querySelector(".grid");
             let msnry = new Masonry(grid, {
-                itemSelector: '.grid-item',
+                gutter: 43,
+                itemSelector: ".grid-item",
                 percentPosition: true,
-                columnWidth: '.grid-sizer'
+                // columnWidth: '33%',
             });
             console.log("msnry: ", msnry);
         };
